@@ -3,19 +3,23 @@ import { CommonModule } from '@angular/common';
 
 import { ConversorComponent } from './components';
 import { MoedaService } from './services';
+import { ConversorService } from './services';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     ConversorComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClient
   ],
   exports:[
     ConversorComponent
   ],
   providers:[
-    MoedaService
+    MoedaService,
+    ConversorService
   ]
 })
 export class ConversorModule { }
