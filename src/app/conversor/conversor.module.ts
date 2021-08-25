@@ -1,24 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { ConversorComponent } from './components';
-import { MoedaService } from './services';
-import { ConversorService } from './services';
-import { HttpClient } from '@angular/common/http';
+import { MoedaService, ConversorService } from './services';
 
 @NgModule({
-  declarations: [
-    ConversorComponent
-  ],
   imports: [
     CommonModule,
-    HttpClient
+    FormsModule
   ],
-  exports:[
-    ConversorComponent
+  declarations: [
+  	ConversorComponent
   ],
-  providers:[
-    MoedaService,
+  exports: [
+  	ConversorComponent
+  ],
+  providers: [
+  	MoedaService,
     ConversorService
   ]
 })

@@ -58,7 +58,7 @@
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js';  // Included with Angular CLI.
-import 'rxjs/add/aoperator/map';
+import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
 
